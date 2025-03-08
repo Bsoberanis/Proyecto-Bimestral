@@ -40,31 +40,7 @@ router.post(
     register
 )
 
-/**
- * @swagger
- * /login:
- *   post:
- *     summary: Iniciar sesión
- *     tags: [Autenticación]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               email:
- *                 type: string
- *               password:
- *                 type: string
- *     responses:
- *       200:
- *         description: Inicio de sesión exitoso
- *       401:
- *         description: Credenciales inválidas
- *       500:
- *         description: Error al iniciar sesión
- */
+
 router.post(
     "/login",
     loginValidator,

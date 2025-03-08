@@ -9,8 +9,8 @@ const options ={
             version: "1.0.0",
             description: "API para un sistema de ventas en linea",
             contact:{
-                name: "Marco Bolaños",
-                email: "marcojosepro2007@gmail.com"
+                name: "brandon soberanis",
+                email: "bsoberanis-2023433@kinal.edu.gt"
             }
         },
         servers:[

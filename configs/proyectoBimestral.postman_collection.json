@@ -29,22 +29,22 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Marco",
+									"value": "Bradon",
 									"type": "text"
 								},
 								{
 									"key": "username",
-									"value": "mbolanos",
+									"value": "bsoberanis",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "mbolanos@gmail.com",
+									"value": "bsoberanis-2023433@kinal.edu.gt",
 									"type": "text"
 								},
 								{
 									"key": "surname",
-									"value": "Bolanos",
+									"value": "soberanis",
 									"type": "text"
 								},
 								{
@@ -59,7 +59,7 @@
 								},
 								{
 									"key": "phone",
-									"value": "37996321",
+									"value": "55778809",
 									"type": "text"
 								},
 								{
@@ -97,7 +97,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\"\r\n}",
+							"raw": "{\r\n    \"email\":\"bsoberanis-2023433@kinal.edu.gt\",\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -131,7 +131,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"mbolanos@gmail.com\",\r\n    \"username\":\"mbolanos\",\r\n    \"password\":\"Mypass1@\"\r\n}",
+							"raw": "{\r\n    \"email\":\"bsoberanis-2023433@kinal.edu.gt\",\r\n    \"username\":\"bsoberanis\",\r\n    \"password\":\"brandon@5577\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

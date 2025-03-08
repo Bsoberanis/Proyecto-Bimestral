@@ -10,8 +10,8 @@ export const registrarCarritoCompra = async(req,res) =>{
         let total = 0
         const {products} = req.body
         
-        for (let i = 0; i < products.length; i++) {
-            let value = await Product.findOne({code: products[i]})
+        for (const product of products) {
+            let value = await Product.findOne({code: product})
             total += value.price
         }
 
@@ -36,8 +36,8 @@ export const pagarCarrito = async(req,res) =>{
         const {uid} = req.params
         const cart = await ShoppingCart.findById(uid)
 
-        for (let i = 0; i < cart.products.length; i++) {
-            const restStock = await Product.findOne({code: cart.products[i]})
+        for (const product of cart.products) {
+            const restStock = await Product.findOne({code: product})
             await Product.findByIdAndUpdate(restStock.id,{$inc: {stock: -1}}, {new: true})
         }
 
@@ -104,7 +104,7 @@ export const eliminarCarrito = async(req,res) => {
     try{
         const {uid} = req.params
 
-        const cart = await ShoppingCart.findByIdAndDelete(uid)
+        await ShoppingCart.findByIdAndDelete(uid)
 
         return res.status(201).json({
             message: "Buy cart deleted successfully"
